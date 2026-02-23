@@ -2,10 +2,6 @@
 
 An interactive educational platform designed to teach users how to identify, avoid, and respond to online scams. ScamShield provides practical guidance on the most common fraud tactics including marketplace scams, phishing, fake websites, and investment fraud.
 
-[![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/yourusername/scamshield)
-[![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
-[![Version](https://img.shields.io/badge/version-1.0.0-blue)](package.json)
-
 ## Table of Contents
 
 - [Overview](#overview)
@@ -20,7 +16,6 @@ An interactive educational platform designed to teach users how to identify, avo
 - [Content Management](#content-management)
 - [Contributing](#contributing)
 - [Support](#support)
-- [License](#license)
 
 ## Overview
 
@@ -334,10 +329,6 @@ If you've been scammed:
 - **FBI IC3**: https://www.ic3.gov
 - **Identity Theft**: https://identitytheft.gov
 - **Credit Fraud Alerts**: Contact your credit card issuer immediately
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 
