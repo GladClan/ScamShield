@@ -82,7 +82,7 @@ The application is designed for non-technical users of all ages, with a calm and
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/scamshield.git
+   git clone https://github.com/GladClan/scamshield.git
    cd scamshield
    ```
 
@@ -315,7 +315,7 @@ Contributions are welcome! Here's how to get started:
 
 ### Reporting Issues
 
-Found a bug or have a suggestion? Please [open an issue](https://github.com/yourusername/scamshield/issues) on GitHub with:
+Found a bug or have a suggestion? Please [open an issue](https://github.com/GladClan/scamshield/issues) on GitHub with:
 - A clear title and description
 - Steps to reproduce (for bugs)
 - Expected vs. actual behavior
