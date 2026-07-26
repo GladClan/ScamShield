@@ -23,7 +23,7 @@ ScamShield is a mobile-first web application built with React and TypeScript. It
 
 - **Interactive learning modules** covering common scam types
 - **Spot the Scam quiz** with realistic scenarios
-- **Is This a Scam? helper tool** for evaluating suspicious situations
+- **Am I Being Scammed? helper tool** for evaluating suspicious situations
 - **Comprehensive resource guides** on safe online practices
 - **Red flags checklist** for quick reference
 - **Recovery guidance** for scam victims
@@ -60,7 +60,7 @@ The application is designed for non-technical users of all ages, with a calm and
   - Visual highlighting of red flags
   - Progress tracking
 
-- **Is This a Scam? Helper**: Step-by-step evaluation tool
+- **Am I Being Scammed? Helper**: Step-by-step evaluation tool
   - Question-based guidance
   - Risk assessment
   - Recommended next steps
@@ -122,7 +122,7 @@ Test your knowledge with interactive scenarios:
 3. Receive immediate feedback with explanations
 4. See highlighted red flags and trust signals
 
-### Is This a Scam? Helper
+### Am I Being Scammed? Helper
 Evaluate a suspicious situation:
 1. Answer guided questions about the source, urgency, and request
 2. Get a risk assessment
@@ -339,6 +339,10 @@ If you've been scammed:
 ## Disclaimer
 
 This educational platform provides general guidance on scam prevention. While we strive for accuracy, scam tactics evolve constantly. Always verify information through official sources and trust your instincts. For specific legal or financial concerns, consult with appropriate professionals.
+
+In other words,
+
+This website is a *student educational project* and *provides general information only*. It is provided 'as-is' *without warranties* of any kind. The creators assume no liability or responsibility for any scams, financial losses, or negative outcomes that occur, *even if you followed the guidance on this site*. For official assistance, ***consult law enforcement or regulatory agencies***.
 
 ---
 

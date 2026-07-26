@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ChevronLeft, AlertTriangle, CheckCircle, ShoppingBag, Store, Mail, CreditCard } from 'lucide-react';
+import { ChevronLeft, AlertTriangle, CheckCircle, ShoppingBag, Store, Mail, CreditCard, Car } from 'lucide-react';
 import { Card } from '../components/Card';
 import { Button } from '../components/Button';
 import { VideoEmbed } from '../components/VideoEmbed';
@@ -36,6 +36,7 @@ export function ScamTypesPage({ onNavigate }: ScamTypesPageProps) {
           Back to All Scam Types
         </Button>
 
+        {/* Header */}
         <div className="mb-8">
           <div className="flex items-center gap-3 mb-4">
             <Icon className="w-10 h-10 text-blue-600" />
@@ -44,6 +45,7 @@ export function ScamTypesPage({ onNavigate }: ScamTypesPageProps) {
           <p className="text-lg text-gray-700 leading-relaxed">{scam.description}</p>
         </div>
 
+        {/* Red Flags */}
         <Card className="mb-6 bg-red-50 border-2 border-red-200">
           <div className="flex items-start gap-3 mb-4">
             <AlertTriangle className="w-6 h-6 text-red-600 flex-shrink-0 mt-1" />
@@ -61,6 +63,7 @@ export function ScamTypesPage({ onNavigate }: ScamTypesPageProps) {
           </ul>
         </Card>
 
+        {/* How to protect yourself section */}
         <Card className="mb-6 bg-green-50 border-2 border-green-200">
           <div className="flex items-start gap-3 mb-4">
             <CheckCircle className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
@@ -76,6 +79,7 @@ export function ScamTypesPage({ onNavigate }: ScamTypesPageProps) {
           </ul>
         </Card>
 
+        {/* Examlpes */}
         <Card className="mb-6">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Real-World Examples</h2>
           <div className="bg-gray-50 rounded-lg p-4 space-y-3">
@@ -88,6 +92,7 @@ export function ScamTypesPage({ onNavigate }: ScamTypesPageProps) {
           </div>
         </Card>
 
+        {/* Video if exists */}
         {scam.videoUrl && (
           <Card>
             <VideoEmbed
@@ -98,12 +103,35 @@ export function ScamTypesPage({ onNavigate }: ScamTypesPageProps) {
           </Card>
         )}
 
+        {scam.references && (
+          <Card className='mb-6 bg-indigo-50 border-2 border-indigo-200'>
+            <h2 className='text-2xl font-bold text-gray-900'>Take a look at these other resources as well</h2>
+            <div className='mt-8 flex flex-col gap-4'>
+              {scam.references.map((r, i)=>(
+                <a
+                  key={`item-${i}`}
+                  className='bg-blue-600 shadow-lg shadow-blue-500/30 rounded-lg p-4 space-y-3 border-2 border-blue-600 hover:bg-blue-900 hover:shadow-lg hover:shadow-blue-800/40'
+                  href={r.link}
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  <div className="flex-1">
+                    <h3 className="text-xl font-bold underline text-gray-100 mb-2">{r.title}</h3>
+                    <p className="text-blue-200 italic mb-4">{r.description}</p>
+                  </div>
+                </a>
+              ))}
+            </div>
+          </Card>
+        )}
+
+        {/* Interaction buttons */}
         <div className="mt-8 flex flex-col sm:flex-row gap-4">
           <Button onClick={() => onNavigate('quiz')} fullWidth>
             Practice Spotting Scams
           </Button>
           <Button onClick={() => onNavigate('helper')} variant="outline" fullWidth>
-            Is This a Scam?
+            Am I Being Scammed?
           </Button>
         </div>
       </div>
@@ -156,7 +184,7 @@ export function ScamTypesPage({ onNavigate }: ScamTypesPageProps) {
         <ul className="space-y-2 text-gray-700">
           <li className="flex items-start gap-2">
             <CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
-            <span>Use our "Is This a Scam?" tool to evaluate it</span>
+            <span>Use our "Am I Being Scammed?" tool to evaluate it</span>
           </li>
           <li className="flex items-start gap-2">
             <CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />

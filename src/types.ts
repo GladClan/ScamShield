@@ -1,3 +1,9 @@
+export interface referenceLink {
+  title: string;
+  link: string;
+  description: string;
+}
+
 export interface ScamType {
   id: string;
   title: string;
@@ -5,6 +11,7 @@ export interface ScamType {
   redFlags: string[];
   whatToDo: string[];
   examples: string[];
+  references: referenceLink[];
   videoUrl?: string;
   icon: string;
 }

@@ -30,6 +30,23 @@ export const scamTypes: ScamType[] = [
       'Seller only accepts PayPal Friends and Family or gift cards',
       'Item is never available to see in person',
     ],
+    references: [
+      {
+        title: 'Facebook Help Center',
+        link: 'https://www.facebook.com/help/1156544111079919',
+        description: 'Facebook\'s official help center, giving a list of helpful tips on staying safe and buying and selling responsibly.',
+      },
+      {
+        title: 'United Community Bank',
+        link: 'https://ucbbank.com/resource-library/id-theft-security/facebook-marketplace-scams',
+        description: 'United Community Bank goes into detail about tactics used by scammers, going into detail on how to avoid falling into their traps.',
+      },
+      {
+        title: 'NetSafe',
+        link: 'https://netsafe.org.nz/scams/facebook-marketplace-scams',
+        description: 'A New Zealand webpage dedicated to teaching about spotting Marketplace scams and what to do if you\'ve experienced a scam.',
+      },
+    ]
   },
   {
     id: 'fake-online-stores',
@@ -60,6 +77,18 @@ export const scamTypes: ScamType[] = [
       'Domain registered just weeks ago',
       'Stock photos used instead of real product images',
     ],
+    references: [
+      {
+        title: 'University of Colorado',
+        link: 'https://www.cu.edu/security/how-spot-fake-online-stores',
+        description: 'Teaches about how fake online store scams work, the risks, the red flags to watch for, and what to do if you\'ve already entered personal or payment information',
+      },
+      {
+        title: 'Office of the Comptroller of the Currency',
+        link: 'https://www.occ.gov/topics/consumers-and-communities/consumer-protection/fraud-resources/online-and-digital-scams.html',
+        description: 'An official United States website talking about how online and digital scams work, common methods, warning signs, ways to avoid getting scammed, and how to report it.',
+      },
+    ]
   },
   {
     id: 'phishing-emails',
@@ -90,6 +119,23 @@ export const scamTypes: ScamType[] = [
       'Netflix message saying payment failed with suspicious link',
       'IRS email demanding immediate payment (IRS never emails)',
     ],
+    references: [
+      {
+        title: 'Federal Bureau of Intelligence',
+        link: 'https://www.fbi.gov/how-we-can-help-you/scams-and-safety/common-frauds-and-scams/spoofing-and-phishing',
+        description: 'Descriptions of what spoofing and phishing are, and how to protect yourself from these scams.',
+      },
+      {
+        title: 'Federal Trade Commission',
+        link: 'https://consumer.ftc.gov/articles/how-recognize-avoid-phishing-scams',
+        description: 'A detailed article about phishing, including how to recognize it, how to protect yourself, what to do if you suspect you\'re being scammed, and how to report phishing.',
+      },
+      {
+        title: 'National Council on Aging',
+        link: 'https://www.ncoa.org/article/how-to-prevent-phishing-scams-a-guide-for-seniors/',
+        description: 'An article especially for adults over the age of 60 covering what is phishing, how it works, why it works so well, how to avoid it, and what to do if you think you\'ve been targeted by a phishing scam.',
+      },
+    ]
   },
   {
     id: 'fake-payment-confirmations',
@@ -120,5 +166,22 @@ export const scamTypes: ScamType[] = [
       'Apple receipt that doesn\'t show in your Apple ID',
       'Subscription renewal that isn\'t in your actual account',
     ],
+    references: [
+      {
+        title: 'Federal Trade Commission',
+        link: 'https://consumer.ftc.gov/articles/how-spot-avoid-and-report-fake-check-scams',
+        description: 'How To Spot, Avoid, and Report Fake Check Scams',
+      },
+      {
+        title: 'Microsoft Support',
+        link: 'https://support.microsoft.com/en-us/security/how-to-spot-a-fake-order-scam',
+        description: 'How to spot a "fake order" scam. This webpage talks about how scammers can send genuine-appearing order confirmations that are actually invitations for them to steal your personal information.',
+      },
+      {
+        title: 'Washington State | Office of the Attorney General',
+        link: 'https://www.atg.wa.gov/wire-transfer-scams',
+        description: 'An official United States webpage talkign about examples of various wire transfer scams and how to recognize them.',
+      },
+    ]
   },
 ];

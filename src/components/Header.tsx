@@ -13,7 +13,7 @@ export function Header({ onNavigate, currentPage }: HeaderProps) {
     { name: 'Home', id: 'home' },
     { name: 'Scam Types', id: 'scam-types' },
     { name: 'Spot the Scam', id: 'quiz' },
-    { name: 'Is This a Scam?', id: 'helper' },
+    { name: 'Am I Being Scammed?', id: 'helper' },
     { name: 'Resources', id: 'resources' },
   ];
 

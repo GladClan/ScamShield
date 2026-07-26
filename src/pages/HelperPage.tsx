@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ChevronLeft, HelpCircle, AlertTriangle, CheckCircle, Info } from 'lucide-react';
+import { ChevronLeft, HelpCircle, AlertTriangle, Info } from 'lucide-react';
 import { Card } from '../components/Card';
 import { Button } from '../components/Button';
 import { helperQuestions, calculateHelperResult } from '../data/helperQuestions';
@@ -110,7 +110,7 @@ export function HelperPage({ onNavigate }: HelperPageProps) {
             >
               Check Another Situation
             </Button>
-            {result.riskLevel === 'high' && (
+            {/* {result.riskLevel === 'high' && ( */}
               <Button
                 onClick={() => onNavigate('help')}
                 variant="outline"
@@ -118,7 +118,7 @@ export function HelperPage({ onNavigate }: HelperPageProps) {
               >
                 I Think I've Been Scammed
               </Button>
-            )}
+            {/* )} */}
           </div>
         </Card>
 
@@ -133,6 +133,27 @@ export function HelperPage({ onNavigate }: HelperPageProps) {
             </div>
           </div>
         </Card>
+
+        {/* Disclaimer */}
+        <Card className="mt-6 border-2 border-amber-200 bg-gradient-to-br from-amber-50 via-white to-amber-50 shadow-sm">
+          <div className="flex items-start gap-3">
+            <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-amber-100 ring-4 ring-amber-50">
+              <AlertTriangle className="h-6 w-6 text-amber-700" />
+            </div>
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-amber-700 mb-1">
+                Disclaimer
+              </p>
+              <h3 className="font-bold text-gray-900 mb-2">Educational use only</h3>
+              <p className="text-gray-700 text-sm leading-6">
+                This interactive tool is for educational purposes only and does not constitute professional, financial, or legal advice.
+                Scam tactics change constantly, and a 'safe' result never guarantees a situation is actually safe. Use this tool at your own risk, and rely on official channels, especially in serious cases.
+                The website creator(s) are not liable for any financial losses or damages resulting from the use of this tool.
+              </p>
+            </div>
+          </div>
+        </Card>
+
       </div>
     );
   }
@@ -152,7 +173,7 @@ export function HelperPage({ onNavigate }: HelperPageProps) {
           Back to Home
         </Button>
       <div className="mb-8">
-        <h1 className="text-4xl font-bold text-gray-900 mb-4">Is This a Scam?</h1>
+        <h1 className="text-4xl font-bold text-gray-900 mb-4">Am I Being Scammed?</h1>
         <p className="text-lg text-gray-600 mb-4">
           Answer a few questions about the situation, and we'll help you evaluate the risk level.
         </p>
@@ -202,6 +223,7 @@ export function HelperPage({ onNavigate }: HelperPageProps) {
         )}
       </Card>
 
+      {/* How this works */}
       <Card className="mt-6 bg-blue-50 border-2 border-blue-200">
         <div className="flex items-start gap-3">
           <Info className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
@@ -213,6 +235,27 @@ export function HelperPage({ onNavigate }: HelperPageProps) {
           </div>
         </div>
       </Card>
+
+      {/* Disclaimer */}
+      <Card className="mt-6 border-2 border-amber-200 bg-gradient-to-br from-amber-50 via-white to-amber-50 shadow-sm">
+        <div className="flex items-start gap-3">
+          <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-amber-100 ring-4 ring-amber-50">
+            <AlertTriangle className="h-6 w-6 text-amber-700" />
+          </div>
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-amber-700 mb-1">
+              Disclaimer
+            </p>
+            <h3 className="font-bold text-gray-900 mb-2">Educational use only</h3>
+            <p className="text-gray-700 text-sm leading-6">
+              This interactive tool is for educational purposes only and does not constitute professional, financial, or legal advice.
+              Scam tactics change constantly, and a 'safe' result never guarantees a situation is actually safe. Use this tool at your own risk, and rely on official channels, especially in serious cases.
+              The website creator(s) are not liable for any financial losses or damages resulting from the use of this tool.
+            </p>
+          </div>
+        </div>
+      </Card>
+
     </div>
   );
 }

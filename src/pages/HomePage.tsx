@@ -24,7 +24,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
     },
     {
       icon: ShieldAlert,
-      title: 'Is This a Scam?',
+      title: 'Am I Being Scammed?',
       description: 'Get help evaluating suspicious messages or offers',
       action: () => onNavigate('helper'),
       color: 'text-orange-600',

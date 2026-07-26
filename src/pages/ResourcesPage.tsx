@@ -1,4 +1,4 @@
-import { ChevronLeft, Shield, FileText, ExternalLink, CheckCircle, AlertCircle } from 'lucide-react';
+import { ChevronLeft, Shield, FileText, ExternalLink, CheckCircle, AlertCircle, AlertTriangle } from 'lucide-react';
 import { Card } from '../components/Card';
 import { Button } from '../components/Button';
 import { redFlagsChecklist } from '../data/checklist';
@@ -251,36 +251,75 @@ export function ResourcesPage({ onNavigate }: ResourcesPageProps) {
       </Card>
 
       <Card>
-        <h3 className="text-xl font-bold text-gray-900 mb-4">Where to Report</h3>
-        <div className="space-y-4">
-          <a
-            href="https://reportfraud.ftc.gov"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center justify-between p-4 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors"
-          >
-            <div className="flex items-center gap-3">
-              <ExternalLink className="w-5 h-5 text-blue-600" />
-              <div>
-                <p className="font-semibold text-gray-900">Federal Trade Commission (FTC)</p>
-                <p className="text-sm text-gray-600">Report fraud and scams</p>
+        <div className='flex flex-row gap-4'>
+          <div className='flex-1'>
+            <h3 className="text-xl font-bold text-gray-900 mb-4">Where to Report</h3>
+            <div className="space-y-4">
+              <a
+                href="https://reportfraud.ftc.gov"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-between p-4 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors"
+              >
+                <div className="flex items-center gap-3">
+                  <ExternalLink className="w-5 h-5 text-blue-600" />
+                  <div>
+                    <p className="font-semibold text-gray-900">Federal Trade Commission (FTC)</p>
+                    <p className="text-sm text-gray-600">Report fraud and scams</p>
+                  </div>
+                </div>
+              </a>
+              <a
+                href="https://www.ic3.gov"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-between p-4 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors"
+              >
+                <div className="flex items-center gap-3">
+                  <ExternalLink className="w-5 h-5 text-blue-600" />
+                  <div>
+                    <p className="font-semibold text-gray-900">FBI Internet Crime Complaint Center</p>
+                    <p className="text-sm text-gray-600">Report cybercrime</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div className="flex-1">
+            <div className="h-full rounded-xl border-2 border-red-200 bg-gradient-to-br from-red-50 via-white to-amber-50 p-5 shadow-sm">
+              <div className="flex items-start gap-3 mb-4">
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-red-100 ring-4 ring-red-50">
+                  <AlertTriangle className="h-6 w-6 text-red-700" />
+                </div>
+                <div>
+                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-red-700">
+                    Critical Warning
+                  </p>
+                  <h4 className="text-lg font-bold text-gray-900">Recovery scams are common</h4>
+                </div>
+              </div>
+              <p className="text-sm leading-6 text-gray-700">
+                Scammers often impersonate the FBI, IC3, or other official agencies to seem trustworthy. Real agencies will never call or message you asking for payment, personal details, or upfront fees to recover stolen funds.
+              </p>
+              <div className="mt-4 rounded-lg border border-red-100 bg-white/80 p-4">
+                <p className="mb-2 text-sm font-semibold text-red-900">Never trust anyone who:</p>
+                <ul className="space-y-2 text-sm text-gray-700">
+                  <li className="flex items-start gap-2">
+                    <span className="mt-1 h-2 w-2 rounded-full bg-red-500 flex-shrink-0" />
+                    asks for money to “unlock” or “recover” your funds
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="mt-1 h-2 w-2 rounded-full bg-red-500 flex-shrink-0" />
+                    pressures you to act immediately or keep the conversation secret
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="mt-1 h-2 w-2 rounded-full bg-red-500 flex-shrink-0" />
+                    requests passwords, verification codes, or banking details
+                  </li>
+                </ul>
               </div>
             </div>
-          </a>
-          <a
-            href="https://www.ic3.gov"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center justify-between p-4 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors"
-          >
-            <div className="flex items-center gap-3">
-              <ExternalLink className="w-5 h-5 text-blue-600" />
-              <div>
-                <p className="font-semibold text-gray-900">FBI Internet Crime Complaint Center</p>
-                <p className="text-sm text-gray-600">Report cybercrime</p>
-              </div>
-            </div>
-          </a>
+          </div>
         </div>
       </Card>
 
